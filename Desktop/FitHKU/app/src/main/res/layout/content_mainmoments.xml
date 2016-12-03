@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content_mainmoments"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.guannan.fithku.momentsactivity"
+    tools:showIn="@layout/app_bar_mainmoment"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="5dp"
+                android:src="@mipmap/back"
+                android:background="#EFEFEF"
+
+
+                />
+
+            <Button
+                android:id="@+id/send"
+
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="send"
+                android:background="#EFEFEF"
+                android:layout_alignParentRight="true"
+
+               >
+            </Button>
+        </RelativeLayout>
+
+    <EditText
+        android:id="@+id/etContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="说点什么吧..."
+        android:paddingTop="8dp"
+        android:background="@null"/>
+    <ImageView
+        android:id="@+id/c_img"
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        android:layout_marginTop="24dp"
+
+        android:src="@mipmap/cals"
+
+        />
+    <VideoView
+        android:id="@+id/c_video"
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        android:visibility="gone"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E0E0E0"/>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E0E0E0"/>
+
+</LinearLayout>
